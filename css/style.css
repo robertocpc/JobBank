@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin:0;
+    background-color: #f4f4f4;
+}
+
+.container{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+header{
+    background: #990716;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #fffc00 solid;
+}
+
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin:0;
+}
+
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+
+header .highlight, header .current a{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#showcase{
+    min-height: 80%;
+    background:url('../img/job.jpeg') no-repeat -600px -400px;
+    opacity:4.0;   
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background: #990716;
+}
+
+#newsletter h1{
+     float: left;
+     margin-left:10%;
+}
+
+footer{
+    padding:20px;
+    margin-top: 0px;
+    color: #ffffff;
+    background-color: #5B5B5B;
+    text-align:center;
+    font-size: 18px;
+
+}
+
