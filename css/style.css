@@ -83,11 +83,6 @@ header nav{
 }
 
 
-header .highlight, header .current a{
-    color: #ffffff;
-    font-weight: bold;
-}
-
 header a:hover{
     font-weight: bold;
 }
@@ -112,13 +107,14 @@ header a:hover{
 .slideshow{
     position: relative;
     height: 90%;
+    padding: 0;
 }
 
 .placeholder{
     position: absolute;
     width:100%;
-    height: 100%;
-    visibility: hidden;
+    height: 90%;
+
 }
 
 
@@ -155,10 +151,10 @@ header a:hover{
     height: 13%;
     opacity: 0.6;
 }
+
 .slideover{
-    background-attachment: fixed;
     position: absolute;
-    margin-left:20%;
+    margin-left: 20%;
     margin-top: 25%;
     width: 60%;
     height: 13%;
@@ -169,9 +165,11 @@ header a:hover{
     margin-top: 1%;
     margin-left: 2%;
 }
+
 .slideover p{
     position: relative;
     font-size: 15px;
+    height: 20%;
     padding: 0;
     margin-bottom: 0;
     color: #ffffff;
@@ -182,6 +180,7 @@ header a:hover{
     width: 61%;
     height: 42%;
 }
+
 .selectpicker{
     color: #8C9090;
     font-size: 15px;
@@ -226,18 +225,14 @@ header a:hover{
   right: 0;
 }
 
-header h1{
-    color: #000;
-    position: center;
-}
 
-footer{
-    height: 5%;
-    color: #ffffff;
+footer p{
+    height: 4%;
     background-color: #5B5B5B;
     text-align:center;
-    font-size: 18px;
-
+    font-size: 15px;
+    margin-top:0;
+    margin-bottom: 0;
 }
 
 #boxes .box{
@@ -245,13 +240,12 @@ footer{
     text-align: justify;
     width:45%;
 }
-.box h2,p{
+.box h2,.box p{
     margin-top: 10%;
     font-size: 14px;
 }
 
 /*CODE*/
-
 html { height: 100% }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
