@@ -42,7 +42,13 @@ body{
     float: right;
     width: 40%;
     margin-top: 0.5%;
-    margin-right:3.5%;
+    margin-right:10%;
+}
+.placeholderr{
+    background: black;
+    position: absolute;
+    width: 50px;
+    height: 30px;
 }
 
 .login{
@@ -135,13 +141,13 @@ input[type=text]{
     float: left;
     position: relative;
     color: white;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 10%;
     text-align: none;
 }
 .well{
     background: rgba(0, 0, 0, 0.65);
-    width:40%;
+    width:30%;
     padding: 0 3% 1% 3%;
     position: relative;
     border-radius: 5px;
@@ -163,7 +169,7 @@ input[type=text]{
 .slideover{
     position: absolute;
     width: 60%;
-    margin-left:15%;
+    margin-left:11%;
     margin-top:8%;
     background: rgba(0, 0, 0, 0.65);
     padding: 0 3% 1% 3%;
@@ -255,3 +261,4 @@ footer p{
     margin-top: 10%;
     font-size: 14px;
 }
+    
