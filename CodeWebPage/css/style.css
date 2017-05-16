@@ -12,7 +12,7 @@ body{
     overflow: hidden;
     position: fixed;
     z-index: 99999;
-    margin: auto;
+    margin: 0;
     width:100%;
 
     background: #ffffff;
@@ -25,50 +25,38 @@ body{
 
 
 
-#branging{
+
+.logg{
+    margin-top: 0px;
     float:left;
-    margin-left:0;
-    margin-right:0;
-    padding:0;
+    margin-left: 10%;
 }
-#branding h1{
-    margin-top:1.2px;
-    margin-left: 18px;
-    margin-bottom: 0;
-    float:left;
+.logg h1{
+    margin: 0;
 }
 
-#branding form{
-    float: right;
-    width: 40%;
+.orden form{
+    float:left;
+    width: 60%;
+}
+
+.orden{
+    float:right;
     margin-top: 0.5%;
     margin-right:10%;
 }
+
+.orden li{
+    display: inline;
+}
+
 .placeholderr{
     background: black;
     position: absolute;
     width: 50px;
     height: 30px;
 }
-
-.login{
-    background-color: #4CAF50; /* Green */
-    border: 1px solid green;
-    border-radius: 8px;
-    color: white;
-    padding: 6px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    transition-duration: 0.4s;
-}
-.login:hover{
-    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.24), 0 10px 60px 0 rgba(0,0,0,0.19);
-    background-color: #13901D;
-    color:white;
-}
-input[type=submit] {
+.submit{
     width: 18%;
     background-color: #4CAF50;
     color: white;
@@ -79,7 +67,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+.submit:hover {
     background-color: #45a049;
 }
 
