@@ -1,40 +1,9 @@
 
-<html>
-    <head>
-        <!--meta charset="utf-8"-->
-        <meta charset="utf-8">
-        <meta name="viweport" content="width=devide-width, initial-scale=1.0">
-        <meta name="description" content="Bolsa de Trabajo UNJBG">
-        <meta name="keywords" content="bolsa de trabajo, unjbg egresados, unjbg, trabajo unjbg">
-        <meta name="author" content="Logo Project">
-        <title>Logo Project | Inicio</title>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div class="logg">    
-                    <h1>JobSearch</h1>
-                </div>
-                <!--h1>Bolsa de Trabajo UNJBG</h1-->
-                <div class="orden">
-                    <div class="inn">
-                        <form action="./php/login.php" method="POST">
-                            <input class="modif" type="text" placeholder="codigo" name="username">
-                            <input class="modif" type="password" placeholder="password" name="password">
-                            <input type="submit" value="Ingresar">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </header>
+<?php 
+    include './header.php';
+?>
         <section>
         <div class="slideshow">
-                <img class="placeholder" scr="./img/networking.jpg">
-                <div class="layer1"></div>
-                <div class="layer2"></div>
-                <div class="layer3"></div>
-                <div class="slide1"></div>
                 <div class="welcome">
                     <div class="well">
                         <h1>ESIS</h1>

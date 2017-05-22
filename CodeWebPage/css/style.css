@@ -1,15 +1,18 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    
     padding: 0;
     margin:0;
     width: 100%;
     background-color: #f4f4f4;
 }
 
+header{
+    height: 6%;
+}
 .container{
-    overflow: hidden;
+    
     position: fixed;
     z-index: 99999;
     margin: 0;
@@ -19,6 +22,7 @@ body{
     height: 6%;
     border-bottom: 3px #0D3786 solid;
 }
+
 
 .logg{
     margin-top: 0px;
@@ -57,12 +61,6 @@ body{
     float: right;
 }
 
-.placeholderr{
-    background: black;
-    position: absolute;
-    width: 50px;
-    height: 30px;
-}
 .submit{
     
     background-color: #4CAF50;
@@ -103,53 +101,18 @@ input[type=text],[type=password]{
     border-radius: 4px;
     box-sizing: border-box;
 }
-
-@keyframes layer2anim{
-    0%{opacity: 0;}
-    17%{opacity: 0;}
-    33%{opacity: 1;}
-    50%{opacity: 1;}
-    67%{opacity: 0;}
-    100%{opacity: 0;}
-}
-
-@keyframes layer3anim{
-    0%{opacity: 0;}
-    50%{opacity: 0;}
-    67%{opacity: 1;}
-    87%{opacity: 1;}
-    100%{opacity: 0;}
-}
-
 .slideshow{
+    background-image: url('../img/slide1.png');
+    background-size: cover;
     position: relative;
     height: 100%;
     padding: 0;
 }
 
-.placeholder{
-    position: absolute;
-    width:100%;
-    height: 90%;
-
-}
-
-
-.layer1, .layer2, .layer3{
-    position: absolute;
-    width: 100%;
-    height:100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.layer1{
-    background-image: url('../img/slide1.png');
-}
 
 .welcome{
     float: left;
-    position: relative;
+
     color: white;
     margin-top: 10%;
     margin-left: 10%;
@@ -159,21 +122,11 @@ input[type=text],[type=password]{
     background: rgba(0, 0, 0, 0.65);
     width:30%;
     padding: 0 3% 1% 3%;
-    position: relative;
     border-radius: 5px;
 }
 
 
 
-.layer2{
-    background-image: url('../img/slide2.png');
-    animation: layer2anim 15s infinite;
-}
-
-.layer3{
-    background-image: url('../img/slide3.png');
-    animation: layer3anim 15s infinite;
-}
 
 
 .slideover{
@@ -214,6 +167,15 @@ input[type=text],[type=password]{
     width: 24%;
     height: 42%;
 }
+.bt_logout{
+    height: 100%;
+    background-color:#ffffff;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
 .button1{
     height: 42%;
     font-size: 15px;
@@ -262,13 +224,12 @@ footer p{
     margin-bottom: 0;
 }
 
-#boxes .box{
-    float: left;
-    text-align: justify;
-    width:45%;
-}
-.box h2,.box p{
-    margin-top: 10%;
-    font-size: 14px;
-}
+
+/*Usuario */
+.perfil{
+    background: #DFDEDE; 
+    font-size: 16px;
+    padding: 2% 0 0 5%; 
+    border:0;
     
+}
