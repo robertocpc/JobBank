@@ -237,15 +237,12 @@ footer p{
     border:0;
     
 }
+
 #newsletter{
-    background: red;
+    background:black;
+    height: 80%;
 }
-.detail{
-    padding: 5px;
-    position: relative;
-    background: green;
-    display: block;
-}
+
 .form{
     float: left;
     width: 50%;
