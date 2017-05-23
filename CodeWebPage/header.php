@@ -7,6 +7,7 @@ session_start();
     <head>
         <!--meta charset="utf-8"-->
         <meta charset="utf-8">
+        <!--meta name="viewport" content="initial-scale=1.0, user-scalable=no" /-->
         <meta name="viweport" content="width=devide-width, initial-scale=1.0">
         <meta name="description" content="Bolsa de Trabajo UNJBG">
         <meta name="keywords" content="bolsa de trabajo, unjbg egresados, unjbg, trabajo unjbg">
