@@ -248,6 +248,20 @@ footer p{
     float: right;
 }
 
+/*asdasd*/
+.box3{
+    width:30%;
+}
+.formm{
+    float: left;
+    width: 40%;
+}
+.formm1{
+    float: left;
+}
+.formm2{
+    float: right;
+}
 
 
 label{
@@ -279,13 +293,19 @@ input[type=txtd]{
     border: 1.5px #BDBFC0 solid; 
 }
 
-input[type=txt1]:focus, input[type=date]:focus, input[type=txt]:focus, input[type=txtd]:focus{
+input[type=txt1]:focus, input[type=date]:focus, input[type=txt]:focus, input[type=txtd]:focus,.opsex:focus{
     border: 1.5px #1671A9 solid;
 }
 .opsex{
     width: 98%;
     font-size: 15px;
     padding: 8px;
-    margin: 0 0 10px; 0;
+    margin: 0 0 10px 0;
     border: 1.5px #BDBFC0 solid;
+}
+.mod{
+    width: 99%;
+    font-size: 15px;
+    float: left;
+    margin: 0 0 10% 0; 
 }

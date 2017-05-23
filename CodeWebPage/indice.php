@@ -2,12 +2,31 @@
 $link=mysqli_connect("127.0.0.1","root","4kegezvc");
 mysqli_select_db($link,"Egresado");
 ?>
+<style>
+.box{
+    width: 30%;
+}
+.form{
+    float: left;
+    width: 40%;
+}
+.form1{
+    float: left;
+}
+.form2{
+    float: right;
+}
+.opsex{
+    width: 98%;
+    font-size: 15px;
+    padding: 8px;
+    margin: 0 0 10px 0;
+    border: 1.5px #BDBFC0 solid;
+}
+</style>
 
 <form name="form1" action="" method="POST">
-    <table>
-        <tr>
-            
-            <td><select id="countrydd" onChange="change_country()">
+  <div class="box form"><select class="opsex" id="countrydd" onChange="change_country()">
                 <option>Select</option>
                 <?php
                 $res=mysqli_query($link,"select * from countries");
@@ -18,34 +37,20 @@ mysqli_select_db($link,"Egresado");
                     <?php
                 }
             ?>
-            </select></td>
-            </tr>
+            </select></div>
 
-<tr>
-    <td>Select State</td>
-    <td>
-        <div id="state">
-            <select>
+        <div class="box form1" id="state">
+            <select class="opsex">
                 <option>Select</option>
             </select>
         </div>
-    </td>
-    </tr>
 
-
-<tr>
-    <td>Select City</td>
-    <td>
-        <div id="city">
-            <select>
+        <div class="box form2"id="city">
+            <select class="opsex">
                 <option>Select</option>
             </select>
         </div>
-    </td>
-    </tr>
-
-
-</table>
+   
 </form>
 
 <script type="text/javascript">
