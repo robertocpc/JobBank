@@ -13,6 +13,7 @@ session_start();
         <meta name="author" content="Logo Project">
         <title>Logo Project | Inicio</title>
         <link rel="stylesheet" href="./css/style.css">
+        
     </head>
     <body>
         <header>
@@ -25,11 +26,13 @@ session_start();
                     <div class="inn">
                         <?php
                             if(isset($_SESSION['cod'])){
-                                echo "<form action='./perfilmod.php'>
-                                <button type='submitt' class='bt_logout'>".$_SESSION['cod']."</button>
-                                </form>";
+                               echo "<form action='./perfilmod.php'>
+                                <button type='submit' class='bt_logout'>".$_SESSION['cod']."</button>
+                                </form>
+                                ";
                                 echo "<form action='./index.php'>
                                 <button type='submitt' class='bt_logout'>TRABAJOS</button>
+                              
                                 </form>";
                                 echo "<form action='./php/logout.php'>
                                 <button type='submitt' class='bt_logout'>LOGOUT</button>

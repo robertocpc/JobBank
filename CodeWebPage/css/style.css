@@ -1,6 +1,6 @@
 body{
     
-    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    font: 15px/1.5 "Times New Roman", Times, serif;
     
     padding: 0;
     margin:0;
@@ -169,11 +169,14 @@ input[type=text],[type=password]{
 }
 .bt_logout{
     height: 100%;
-    background-color:#ffffff;
+    background:#000;
     border: 0;
     padding-left: 20px;
     padding-right: 20px;
     color: #ffffff;
+}
+.bt_logout:hover{
+    background-color: #444;
 }
 
 .button1{
@@ -227,9 +230,27 @@ footer p{
 
 /*Usuario */
 .perfil{
-    background: #DFDEDE; 
+    background: #f4f4f4; 
     font-size: 16px;
     padding: 2% 0 0 5%; 
+    margin-left: 10%;
     border:0;
     
+}
+#newsletter{
+    background: red;
+}
+.detail{
+    padding: 5px;
+    position: relative;
+    background: green;
+    display: block;
+}
+.form{
+    float: left;
+    width: 50%;
+}
+.form1{
+    float: right;
+    width: 50%;
 }
