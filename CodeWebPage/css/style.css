@@ -238,7 +238,7 @@ footer p{
     width:50%;
 }
 
-.form, .form1{
+.box{
     width: 50%;
 }
 .form{
@@ -247,29 +247,45 @@ footer p{
 .form1{
     float: right;
 }
-.details{
-    padding-top: 0%;
-}
+
 
 
 label{
     font-weight: bold;
 }
-
-input[type=txt],[type=date],[type=txt1]{
-    width: 100%;
+input[type=txt],[type=txt1]{
+    width: 98%;
     font-size: 15px;
     padding: 8px;
     margin: 0 0 10px 0;
     border: 1.5px #BDBFC0 solid;
 }
-input[type=txt1]{
-    width: 98%;
-}
 input[type=date]{
-    width:49%; 
+    width: 98%;
+    font-size: 15px;
+    padding: 6px;
+    margin: 0 0 10px 0;
+    border: 1.5px #BDBFC0 solid;
 }
 
-input[type=txt1]:focus{
+input[type=txt1], input[name=fechi], input[name=fechc]{
+    width: 98%;
+}
+input[type=txtd]{
+    width: 99%;
+    font-size: 15px;
+    padding: 8px;
+    margin: 0 0 10px 0;
+    border: 1.5px #BDBFC0 solid; 
+}
+
+input[type=txt1]:focus, input[type=date]:focus, input[type=txt]:focus, input[type=txtd]:focus{
     border: 1.5px #1671A9 solid;
+}
+.opsex{
+    width: 98%;
+    font-size: 15px;
+    padding: 8px;
+    margin: 0 0 10px; 0;
+    border: 1.5px #BDBFC0 solid;
 }

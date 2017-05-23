@@ -20,7 +20,7 @@ session_start();
         <header>
             <div class="container">
                 <div class="logg">    
-                    <h1>JobSearch</h1>
+                    <a href="./index.php"><h1>JobSearch</h1></a>
                 </div>
                 <!--h1>Bolsa de Trabajo UNJBG</h1-->
                 <div class="orden">
