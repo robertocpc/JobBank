@@ -235,27 +235,23 @@ footer p{
     padding: 2% 0 0 5%; 
     margin-left: 10%;
     border:0;
-
-}
-#newsletter, #separate{
-    width: 60%;
-    margin:0;
-    border:0;
-    position: relative;
+    width:50%;
 }
 
+.form, .form1{
+    width: 50%;
+}
 .form{
     float: left;
-    width: 50%
 }
 .form1{
     float: right;
-    width: 50%;
+}
+.details{
+    padding-top: 0%;
 }
 
-.detail{
-    padding-bottom: 10%;
-}
+
 label{
     font-weight: bold;
 }
@@ -263,7 +259,7 @@ label{
 input[type=txt],[type=date],[type=txt1]{
     width: 100%;
     font-size: 15px;
-    padding: 6px;
+    padding: 8px;
     margin: 0 0 10px 0;
     border: 1.5px #BDBFC0 solid;
 }
@@ -275,5 +271,5 @@ input[type=date]{
 }
 
 input[type=txt1]:focus{
-    border: 1.8px #1671A9 solid;
+    border: 1.5px #1671A9 solid;
 }

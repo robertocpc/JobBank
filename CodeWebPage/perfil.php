@@ -4,8 +4,7 @@ session_start();
 
 <div class="perfil"> 
                <form action="./index.php">
-                <section id="newsletter">
-                    <div class="detail">
+                    
                         <div class="form">
                             <label>Nombre</label><br>
                             <input type="txt1" name="firstname" placeholder="">
@@ -14,11 +13,8 @@ session_start();
                             <label>Apellido</label><br>
                             <input type="txt1" id="lname" name="lastname" placeholder="Apellido.."><br>
                         </div>
-                    </div>
-                </section>
-                <section id="separate">
                     <div class="details">
-                        <label for="fnac">Fecha de Nacimiento:</label><br>
+                        <br><label for="fnac">Fecha de Nacimiento:</label><br>
                         <input type="date" name="bday"><br>
                     </div>
                     <div>
@@ -39,7 +35,6 @@ session_start();
                         <input type="txt" name="codtesis" placeholder="Codigo de Tesis..">
                         <input type="submit" value="Guardar Cambios">
                     </div>
-                </section>
             </form>
        
     </div>
