@@ -2,29 +2,29 @@
 session_start();
 
 ?>
-<?php
-$link=mysqli_connect("127.0.0.1","root","4kegezvc");
-mysqli_select_db($link,"Egresado");
+    <?php
+    $link=mysqli_connect("127.0.0.1","root","4kegezvc");
+    mysqli_select_db($link,"Egresado");
 ?>
-<div class="perfil"> 
+    <div class="perfil"> 
                <form action="./ingresar.php" method="POST">
-                    
-                        <div class="box form">
-                            <label>Nombre</label><br>
-                            <input type="txt1" name="firstname" placeholder="">
-                        </div>
-                        <div class="box form1">
-                            <label>Apellido</label><br>
-                            <input type="txt1" id="lname" name="lastname" placeholder="Apellido.."><br>
-                        </div>
+                
+                    <div class="box form">
+                        <label>Nombre</label><br>
+                        <input type="txt1" id="fname" name="firstname">
+                    </div>
+                    <div class="box form1">
+                        <label>Apellido</label><br>
+                        <input type="txt1" id="lname" name="lastname" placeholder="Apellido.."><br>
+                    </div>
                     <div class="box form1">
                         <label for="fnac">Fecha de Nacimiento:</label><br>
                         <input type="date" name="bday">
                     </div>
                     <div class="box form">
                         <label>Sexo</label><br>
-                        <select class="opsex">
-                            <option selected>ninguno</option>
+                        <select class="opsex" name="dsex">
+                            <option selecte></option>
                             <option value="male">Hombre</option>
                             <option value="female">Mujer</option>
                             <option value="nospec">Sin especificar</option>
@@ -41,8 +41,8 @@ mysqli_select_db($link,"Egresado");
 
 
                     <div class="box3 formm">
-                        <select class="opsex" id="countrydd" onChange="change_country()">
-                            <option>Select</option>
+                        <select class="opsex" id="countrydd" name="country" onChange="change_country()" placeholder="ninguno">
+                            <option></option>
                             <?php
                             $res=mysqli_query($link,"select * from countries");
                             while($row=mysqli_fetch_array($res))
@@ -53,14 +53,14 @@ mysqli_select_db($link,"Egresado");
                             }
                         ?>
                         </select></div>
-                    <div class="box3 formm1" id="state">
+                    <div class="box3 formm1" name="state" id="state">
                         <select class="opsex">
-                            <option>Select</option>
+                            <option></option>
                         </select>
                     </div>
-                    <div class="box3 formm2"id="city">
+                    <div class="box3 formm2" name="city" id="city">
                         <select class="opsex">
-                            <option>Select</option>
+                            <option></option>
                         </select>
                     </div>
 
@@ -73,8 +73,8 @@ mysqli_select_db($link,"Egresado");
                         </select><br-->
                     <div class="mod">    
                         <label>Dirección</label><br>
-                        <input type="txtd" name="direc" placeholder="Direccion.."><br>
-                    <div>
+                        <input type="txtd" name="direc" placeholder="Direccion..">
+                    </div>
                     <div class="box form">
                         <label for="fnac">Fecha de Ingreso:</label><br>
                         <input type="date" name="fechi"><br>
@@ -95,7 +95,6 @@ mysqli_select_db($link,"Egresado");
                         <input type="submit" value="Guardar Cambios">
                     </div>
             </form>
-       
     </div>
 
 <script type="text/javascript">

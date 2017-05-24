@@ -1,5 +1,6 @@
 
 <?php 
+    
     include './header.php';
 ?>
         <section>
@@ -51,7 +52,7 @@
         </div>
         </section>
         <footer>
-            <p>Logo Project &copy; 2017</p>
+            <p>Miracle &copy; 2017</p>
              
         </footer>
     </body>

@@ -1,6 +1,7 @@
  <?php 
 /* Main page with two forms: sign up and log in */
 session_start();
+
 ?>
 <html>
 
@@ -26,9 +27,10 @@ session_start();
                 <div class="orden">
                     <div class="inn">
                         <?php
-                            if(isset($_SESSION['cod'])){
+                            if(isset($_SESSION['logged_in'])){
+                               
                                echo "<form action='./perfilmod.php'>
-                                <button type='submit' class='bt_logout'>".$_SESSION['cod']."</button>
+                                <button type='submit' class='bt_logout'>".$_SESSION['usuario']."</button>
                                 </form>
                                 ";
                                 echo "<form action='./index.php'>

@@ -8,7 +8,7 @@ if($country!="")
 {
 
         $res=mysqli_query($link,"select * from states where country_id=$country");
-        echo "<select class='opsex' id='statedd' onChange='change_state()'>";
+        echo "<select class='opsex'name='state' id='statedd' onChange='change_state()'>";
         while($row=mysqli_fetch_array($res))
         {
             echo "<option value='$row[id]'>"; echo $row["name"]; echo "</option>";
@@ -20,7 +20,7 @@ if($state!="")
 {
 
         $res=mysqli_query($link,"select * from cities where state_id=$state");
-        echo "<select class='opsex'>";
+        echo "<select class='opsex' name='city'>";
         while($row=mysqli_fetch_array($res))
         {
             echo "<option value='$row[id]'>"; echo $row["name"]; echo "</option>";

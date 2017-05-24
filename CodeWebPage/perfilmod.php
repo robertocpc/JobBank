@@ -5,14 +5,14 @@
         include './perfil.php';
     }
     else{
-        echo "NO HA INGRESADO AUN";
+        $_SESSION['message']="No ha ingresado aun..";
     }
 ?>
         
 
 
         <footer>
-            <p>Logo Project &copy; 2017</p>
+            <p>Miracle &copy; 2017</p>
              
         </footer>
     </body>
